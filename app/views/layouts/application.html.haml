@@ -7,11 +7,15 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-      %div{class: "content"}
-        %div{class: "header"}
-        %div{class: "header__logo"}
-        %div{class: "header__category_box"}
-        %div{class: "header__log_in"}
+    %div{class: "content"}
+      %header
+        %div{class: "logo"}
+        %form.query{ 'action' => url_for( :action => 'search' ) }
+          = text_field_tag 'q', @q_words ? @q_words.join(' ') : '', :size => 40
+          = submit_tag ' 検索 '
+          = link_to_function image_tag('question-mark.gif'), "$('#about').toggle()", :title => 'Toggle Help Block'
+        %div{class: "category_box"}
+        %div{class: "log_in"}
       %nav{class: "bread-crumbs"}
       = yield
-      %div{class: "footer"}
+      %footer
