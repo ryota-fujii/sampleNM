@@ -1,16 +1,14 @@
 .main_content{
   height: 1000px;
+  padding: 0px 100px;
+  &__top{
+    height: 400px;
+    background: gray;
+  }
   &__left{
     height: 600px;
     width: 600px;
     background: red;
-    display: inline-block;
-  }
-  &__right{
-    height: 300px;
-    width: 400px;
-    background: yellow;
-    float: right;
     display: inline-block;
   }
 }
