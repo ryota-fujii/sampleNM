@@ -1,0 +1,88 @@
+header{
+  height: 90px;
+  width: 100vw;
+  padding: 0px 100px;
+  border-bottom: solid thin #eeeeee;
+  .logo{
+    display: inline-block;
+    float: left;
+  }
+  .nave-bar{
+    height: 50px;
+    width: 100vw;
+    border-top: solid thin #eeeeee;
+    .category_box{
+      height: 40px;
+      width: 300px;
+      display: inline-block;
+      margin-top: 10px;
+      .btn-1{
+        display: inline-block;
+        color: #38aef0;
+        height: 30px;
+        width: 64px;
+        line-height: 36px;
+        text-align: center;
+        border: 2px solid;
+        border-color: #38aef0;
+        text-decoration: none;
+        font-size: 10px;
+      }
+      .btn-2{
+        display: inline-block;
+        color: #38aef0;
+        height: 30px;
+        width: 64px;
+        line-height: 36px;
+        text-align: center;
+        border: 2px solid;
+        border-color: #38aef0;
+        text-decoration: none;
+        font-size: 10px;
+      }
+    }
+    .log_in{
+      height: 40px;
+      width: 500px;
+      display: inline-block;
+      margin-top: 10px;
+      float: right;
+      .btn-1{
+        display: inline-block;
+        color: #38aef0;
+        height: 30px;
+        width: 64px;
+        line-height: 36px;
+        text-align: center;
+        border: 2px solid;
+        border-color: #38aef0;
+        text-decoration: none;
+        font-size: 10px;
+      }
+      .btn-2{
+        display: inline-block;
+        color: #38aef0;
+        height: 30px;
+        width: 64px;
+        line-height: 36px;
+        text-align: center;
+        border: 2px solid;
+        border-color: #38aef0;
+        text-decoration: none;
+        font-size: 10px;
+      }
+    }
+  }
+}
+.bread-crumbs{
+  height: 40px;
+  border-color: #38aef0;
+  width: 100vw;
+  border-bottom: solid thin #eeeeee;
+}
+
+footer{
+  height: 600px;
+  width: 100vw;
+  background: #aaaaaa;
+}

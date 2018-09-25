@@ -9,13 +9,21 @@
   %body
     %div{class: "content"}
       %header
-        %div{class: "logo"}
-        %form.query{ 'action' => url_for( :action => 'search' ) }
-          = text_field_tag 'q', @q_words ? @q_words.join(' ') : '', :size => 40
-          = submit_tag ' 検索 '
-          = link_to_function image_tag('question-mark.gif'), "$('#about').toggle()", :title => 'Toggle Help Block'
-        %div{class: "category_box"}
-        %div{class: "log_in"}
+        =link_to root_path target: "_self" do
+          = image_tag "https://psm-bucket-2.west.edge.storage-yahoo.jp/psm-lks8amn4er6udonk7uwokq/event/ff/013fygyj0m7g/1/m_2_nKZ5R1lpY2yIEUaiKAhPgA.jpg", class: "logo", size: "120x50"
+        %form.form4{:action => "自分のサイトURL", :method => "get"}
+          %input.sbox4{:name => "s", :placeholder => "フリーワードを入力", :type => "text"}/
+          %button.sbtn4{:type => "submit"}
+            %i.fa.fa-search.fa-lg
+        %div{class: "nave-bar"}
+          %div{class: "category_box"}
+            =link_to "カテゴリ1", root_path, class: "btn-1"
+            =link_to "カテゴリ2", root_path, class: "btn-2"
+          %div{class: "log_in"}
+            =link_to "カテゴリ1", root_path, class: "btn-1"
+            =link_to "カテゴリ2", root_path, class: "btn-2"
       %nav{class: "bread-crumbs"}
+        ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ
       = yield
       %footer
+        ふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふが
