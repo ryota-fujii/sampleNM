@@ -4,11 +4,21 @@
   &__top{
     height: 400px;
     background: gray;
+    clear: both;
   }
   &__left{
     height: 600px;
-    width: 600px;
+    width: 550px;
     background: red;
     display: inline-block;
+    float: left;
+  }
+  &__right{
+    height: 400px;
+    width: 433px;
+    margin-top: 100px;
+    background: blue;
+    display: inline-block;
+    float: right;
   }
 }

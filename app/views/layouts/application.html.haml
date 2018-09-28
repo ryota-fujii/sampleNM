@@ -10,9 +10,9 @@
     %div{class: "content"}
       %header
         =link_to root_path target: "_self" do
-          = image_tag "https://psm-bucket-2.west.edge.storage-yahoo.jp/psm-lks8amn4er6udonk7uwokq/event/ff/013fygyj0m7g/1/m_2_nKZ5R1lpY2yIEUaiKAhPgA.jpg", class: "logo", size: "120x50"
+          = image_tag "https://news.walkerplus.com/article/139569/782863_615.jpg", class: "logo", size: "120x50"
         %form.form4{:action => "自分のサイトURL", :method => "get"}
-          %input.sbox4{:name => "s", :placeholder => "フリーワードを入力", :type => "text"}/
+          %input.sbox4{:name => "s", :placeholder => "キーワードから探す", :type => "text"}/
           %button.sbtn4{:type => "submit"}
             %i.fa.fa-search.fa-lg
         %div{class: "nave-bar"}
@@ -20,10 +20,10 @@
             =link_to "カテゴリ1", root_path, class: "btn-1"
             =link_to "カテゴリ2", root_path, class: "btn-2"
           %div{class: "log_in"}
-            =link_to "カテゴリ1", root_path, class: "btn-1"
-            =link_to "カテゴリ2", root_path, class: "btn-2"
+            =link_to "ログイン", root_path, class: "btn-1"
+            =link_to "ログアウト", root_path, class: "btn-2"
         %nav{class: "bread-crumbs"}
-          ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ
+          ここに現在のページの場所を表示する
       = yield
       %footer
-        ふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふが
+        連絡先等の情報をここに記述する
