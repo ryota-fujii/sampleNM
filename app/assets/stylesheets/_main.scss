@@ -1,6 +1,6 @@
 .main_content{
   height: 1000px;
-  padding: 132px 100px 0px;
+  padding: 120px 108px 0px;
   &__top{
     height: 400px;
     background: gray;
@@ -8,14 +8,14 @@
   }
   &__left{
     height: 600px;
-    width: 670px;
+    width: 44vw;
     background: red;
     display: inline-block;
     float: left;
   }
   &__right{
     height: 400px;
-    width: 554px;
+    width: 36vw;
     margin-top: 100px;
     background: blue;
     display: inline-block;

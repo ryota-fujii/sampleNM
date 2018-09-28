@@ -2,8 +2,10 @@ header{
   height: 90px;
   width: 100vw;
   padding: 0px 100px;
+  background: white;
   border-bottom: solid thin #eeeeee;
   position: fixed;
+  top: 0px;
   .logo{
     display: inline-block;
     float: left;
@@ -76,8 +78,10 @@ header{
   }
   .bread-crumbs{
     height: 40px;
-    border-color: #38aef0;
     width: 100vw;
+    padding: 0px 100px;
+    border-color: #38aef0;
+    background: white;
     border-bottom: solid thin #eeeeee;
   }
 }
